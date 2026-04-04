@@ -3,7 +3,8 @@ A personal CS looping script that will likely only work if you are me (CJ-Sucks-
 It is generally intended to work with my intended account setup. And likely won't work for you.
 It beats a Community Service without running any combats, using a full stomach and liver.
 
-It likely can win a run without all requirements listed, But I have a very weird account state, so I haven't really configured it to run for less shiny accounts. Requirements like the BCZ are barely used
+It likely can win a run without all requirements listed, But I have a very weird account state, so I haven't really configured it to run for less shiny accounts. Requirements like the BCZ are barely used.
+
 I think it could win a run reliably with its pulls, a September Censer, Cursed Monkey Paw, August Sceptre, and Ski Set, and the VIP Key.
 
 Requirements
