@@ -113,8 +113,8 @@ void leveling() {
     use_familiar($familiar[exotic parrot]);
     
     // Cast spells
-    buy(2, $item[Doc Galaktik's Invigorating Tonic]);
-    use(2, $item[Doc Galaktik's Invigorating Tonic]);
+    buy(4, $item[Doc Galaktik's Invigorating Tonic]);
+    use(4, $item[Doc Galaktik's Invigorating Tonic]);
     cli_execute("cast Elemental Saucesphere");
     cli_execute("cast Astral Shell");
     cli_execute("cast Leash of Linguini");
