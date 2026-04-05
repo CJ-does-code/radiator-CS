@@ -394,10 +394,10 @@ void noncom_test() {
     cli_execute("photobooth effect wild");
     
     // Maximize for noncom
-    cli_execute("maximize noncombat");
+    cli_execute("maximize -combat -tie");
     
     // Do test
-    int quest = get_cs_questNum("non-combat");
+    int quest = get_cs_questNum("nc");
     visit_url("council.php");
     visit_url("choice.php?whichchoice=1089&option=" + quest + "&pwd=" + my_hash());
     
