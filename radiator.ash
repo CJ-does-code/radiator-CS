@@ -232,6 +232,12 @@ void stat_tests() {
     // Make sheriff badge
     cli_execute("make sheriff badge");
     
+    // Use blood thinner if not a seal clubber or turtle tamer
+    if (my_class() != $class[seal clubber] && my_class() != $class[turtle tamer]) {
+        cli_execute("cast create blood thinner");
+        chew(1, $item[blood thinner]);
+    }
+    
     // Do all 3 tests using maximizer
     cli_execute("maximize HP");
     int quest = get_cs_questNum("hp");

@@ -8,6 +8,7 @@ It likely can win a run without all requirements listed, But I have a very weird
 I think it could win a run reliably with its pulls, a September Censer, Cursed Monkey Paw, August Sceptre, and Ski Set, and the VIP Key, if properly optimized with alternate strategies and not assuming its running on my account all of the time.
 
 Requirements
+- Be a seal clubber with the platypus sign and a astral pet sweater
 - clan VIP room with a maxed photobooth,Pool table, Olympic pool, and sufficient trout to make troutser's.
 - September Censer, Pristmatic Beret, Monkey Paw, August Sceptre, McHugeLarge deluxe ski set, allied radio backpack, Blood Cube Zirconia.
 - A infinite bowl of jelly, A borrowed time, and the 3 Legendary Pizza's pre-crafted (all pulled and used).
