@@ -311,6 +311,7 @@ void spell_dmg() {
     cli_execute("cast Jackasses' Symphony of Destruction");
     cli_execute("cast Spirit of Cayenne");
     cli_execute("cast dial it up");
+    cli_execute("cast Simmer");
     
     // Rest 1x
     equip($item[allied radio backpack]);
