@@ -238,6 +238,8 @@ void stat_tests() {
         chew(1, $item[blood thinner]);
     }
     
+    cli_execute("cast * Passionate Pop Song");
+
     // Do all 3 tests using maximizer
     cli_execute("maximize HP");
     int quest = get_cs_questNum("hp");
