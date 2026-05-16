@@ -410,7 +410,7 @@ void noncom_test() {
     visit_url("council.php");
     visit_url("choice.php?whichchoice=1089&option=" + quest + "&pwd=" + my_hash());
     
-    current_state = "Done";
+    current_state = "Finish";
     print("Current state: " + current_state);
 }
 
@@ -434,25 +434,15 @@ void famwt_test() {
     print("Current state: " + current_state);
 }
 
-void main(string arg) {
-    if (arg != "") {
-        string start = to_lower_case(arg);
-        if (start == "prep" || start == "prequest") current_state = "Pre-Quest";
-        else if (start == "leveling" || start == "prestats") current_state = "Pre Stat tests";
-        else if (start == "stats" || start == "stattests") current_state = "Stat tests";
-        else if (start == "famwt" || start == "familiar") current_state = "FamWT test";
-        else if (start == "hotres" || start == "hot") current_state = "Hot res test";
-        else if (start == "weapondmg" || start == "weapon") current_state = "Weapon DMG";
-        else if (start == "spelldmg" || start == "spell") current_state = "Spell DMG";
-        else if (start == "itemdrop" || start == "item") current_state = "Item drop test";
-        else if (start == "noncom" || start == "noncombat") current_state = "Noncom test";
-        else {
-            print("Unknown start point: " + arg + ". Starting from beginning.");
-            current_state = "Pre-Quest";
-        }
-    } else {
-        current_state = "Pre-Quest";
-    }
+void finish() {
+    visit_url("council.php");
+    visit_url("choice.php?whichchoice=1089&option=" + 30 + "&pwd=" + my_hash());
+    cli_execute("pull all");
+    current_state = "Done";
+    print("Current state: " + current_state);
+}
+
+void main() {
     while (current_state != "Done") {
         if (current_state == "Pre-Quest") prepwork();
         else if (current_state == "Pre Stat tests") leveling();
@@ -463,6 +453,7 @@ void main(string arg) {
         else if (current_state == "Item drop test") item_drop_test();
         else if (current_state == "Noncom test") noncom_test();
         else if (current_state == "FamWT test") famwt_test();
+        else if (current_state == "Finish") finish();
         else {
             print("Unknown state: " + current_state);
             break;
